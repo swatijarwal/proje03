@@ -197,7 +197,7 @@
 					<td><input type="submit" name="operation"
 						class="btn btn-warning btn-md" style="font-size: 17px"
 						value="<%=UserListCtl.OP_PREVIOUS%>"
-						<%=pageNo > 1 ? "" : "disabled"%>></td>
+						<%=pageNo == 1 ? "" : "disabled"%>></td>
 					<td><input type="submit" name="operation"
 						class="btn btn-primary btn-md" style="font-size: 17px"
 						value="<%=UserListCtl.OP_NEW%>"></td>
@@ -208,7 +208,7 @@
 					<td align="right"><input type="submit" name="operation"
 						class="btn btn-warning btn-md" style="font-size: 17px"
 						style="padding: 5px;" value="<%=UserListCtl.OP_NEXT%>"
-						<%=(nextPageSize != 0) ? "" : "disabled"%>></td>
+						<%=(nextPageSize == 0) ? "" : "disabled"%>></td>
 				</tr>
 				<tr></tr>
 			</table>
